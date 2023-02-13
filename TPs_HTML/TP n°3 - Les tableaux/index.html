@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site web sur le TP 3 les tableaux">
+  <title>TP sur les tableaux du cours HTML</title>
+</head>
+
+<body>
+  <h1>JEUFFRAIN Warren&nbsp;-&nbsp;Les tableaux</h1>
+  <h2>Mon premier tableau</h2>
+
+  <table border="">
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Game</th>
+        <th>Console</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>001</td>
+        <td>Pkmn Ruby</td>
+        <td>Game Boy Advance</td>
+      </tr>
+
+      <tr>
+        <td>002</td>
+        <td>Rayman 2</td>
+        <td>Dreamcast</td>
+      </tr>
+
+      <tr>
+        <td>003</td>
+        <td>Wario Ware</td>
+        <td>Game Boy Advance</td>
+      </tr>
+
+      <tr>
+        <td>004</td>
+        <td>Sonic Advt 2</td>
+        <td>Dreamcast</td>
+      </tr>
+
+      <tr>
+        <td>005</td>
+        <td>GTA</td>
+        <td>Dreamcast</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--la balise THEAD est à mettre dans les titres du tableau et en remplacement les td par des th-->
+  <!--On oublie pas également d'englober le corps du tableau avec TBODY-->
+
+  <h2>Mon second tableau</h2>
+
+  <table border="">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Game</th>
+        <th>Console</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>002</td>
+        <td>Rayman 2</td>
+        <td rowspan="2">Dreamcast</td>
+        <td>2000</td>
+      </tr>
+      <tr>
+        <td>004</td>
+        <td>Sonic Advt 2</td>
+        <td>2001</td>
+      </tr>
+      <tr>
+        <td>001</td>
+        <td>Pokmn Ruby</td>
+        <td rowspan="2">Game Boy Advance</td>
+        <td>2003</td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>Wario Ware</td>
+        <td>2003</td>
+      </tr>
+      <tr>
+        <td>005</td>
+        <td>GTA III</td>
+        <td>Dreamcast</td>
+        <td>2001</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Mon troisième tableau</h2>
+
+  <table border="">
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Game</th>
+        <th>Console</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>001</td>
+        <td>Pkmn Ruby</td>
+        <td>Game Boy Advance</td>
+        <td>30.00€</td>
+      </tr>
+
+      <tr>
+        <td>002</td>
+        <td>Rayman 2</td>
+        <td>Dreamcast</td>
+        <td>40.00€</td>
+      </tr>
+
+      <tr>
+        <td>003</td>
+        <td>Wario Ware</td>
+        <td>Game Boy Advance</td>
+        <td>25.00€</td>
+      </tr>
+
+      <tr>
+        <td>004</td>
+        <td>Sonic Advt 2</td>
+        <td>Dreamcast</td>
+        <td>40.00€</td>
+      </tr>
+
+      <tr>
+        <td>Articles</td>
+        <td colspan="3">Rayman 2 + Sonic Advt</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">TOTAL</td>
+        <td>80.00€</td>
+      </tr>
+    </tfoot>
+
+  </table>
+
+
+  <h2>Mon emploi du temps</h2>
+
+  <table border="">
+    <thead>
+      <tr>
+        <th colspan="7">Emploi du temps</th>
+      </tr>
+
+      <tr>
+        <th>X</th>
+        <th>Lundi</th>
+        <th>Mardi</th>
+        <th>Mercredi</th>
+        <th>Jeudi</th>
+        <th>Vendredi</th>
+        <th>WEEK-END</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">A.M</td>
+        <td rowspan="2">Rentrée</td>
+        <td rowspan="1">HTML</td>
+        <td rowspan="1">CSS</td>
+        <td rowspan="4">Libre</td>
+        <td rowspan="1">TP n°5</td>
+        <td rowspan="4">NETFLIX & CHILL</td>
+      </tr>
+
+      <tr>
+        <td rowspan="1">TP n°2</td>
+        <td rowspan="1">TP n°4</td>
+        <td rowspan="1">TP n°6</td>
+      </tr>
+
+      <tr>
+        <td rowspan="2">P.M</td>
+        <td rowspan="1">HTML</td>
+        <td rowspan="2">TP n°3</td>
+        <td rowspan="2">Bilan</td>
+        <td rowspan="1">JS</td>
+
+      </tr>
+
+      <tr>
+        <td rowspan="1">TP n°1</td>
+        <td rowspan="1">PHP</td>
+      </tr>
+
+    </tbody>
+  </table>
+</body>
+
+</html>
